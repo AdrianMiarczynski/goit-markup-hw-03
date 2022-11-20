@@ -1,5 +1,5 @@
 *{
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 :root {
@@ -25,31 +25,38 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  border: 1px #ececec;
+  border-bottom: 1px #ececec;
+}
+.container
+{
+  max-width: 1200px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 200px;
 }
 .logo {
   width: 145px;
   height: 31px;
-  margin-left: 215px;
-  top: 24px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
   letter-spacing: 0.03em;
   color: var(--color-black);
   text-decoration: none;
-  position: absolute;
   font-family: 'Raleway';
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .web {
   color: var(--color-blue);
 }
 .navigation {
-  position: absolute;
   width: 254px;
   height: 16px;
-  left: 453px;
-  top: 32px;
+  margin-top: 32px;
+  margin-left: 93px;
 }
 .navigation ul {
   list-style-type: none;
@@ -73,64 +80,65 @@ body {
   text-decoration: none;
 }
 .portfolio {
-  margin-left: 46px;
+  padding-left: 46px;
   text-decoration: none;
 }
 .contact {
-  margin-left: 46px;
+  padding-left: 46px;
   width: 51px;
   height: 16px;
   text-decoration: none;
 }
 /*finish navigation*/
 .email {
-  position: absolute;
   width: 135px;
   height: 16px;
-  left: 1078px;
-  top: 32px;
   color: var(--color-grey);
   text-decoration: none;
+  margin-left: 371px;
+  padding-top: 32px;
 }
 .email:hover,
 .email:focus {
   color: var(--color-blue);
 }
 .telephone {
-  position: absolute;
   width: 110px;
   height: 16px;
-  left: 1263px;
-  top: 32px;
   color: var(--color-grey);
   text-decoration: none;
+  margin-left: 50px;
+  padding-top: 32px;
 }
 /*finish menu*/
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .header {
   width: 1600px;
   height: 600px;
   background: var(--color-header-footer);
   text-align: center;
 }
+.container.top{
+  flex-direction: column;
+  align-items: center;
+  padding-top: 106px;
+}
 .main-header {
-  position: absolute;
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--color-background);
-  margin: 0;
+  margin-bottom: 30px;
 }
 .header .button {
-  position: absolute;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 350px;
   background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: var(--color-blue);
