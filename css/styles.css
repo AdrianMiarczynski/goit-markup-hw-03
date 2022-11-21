@@ -288,10 +288,11 @@ body {
   background: var(--color-header-footer);
   letter-spacing: 0.03em;
 }
+.container.last
+{
+  flex-direction: column;
+}
 .logo-bottom {
-  position: absolute;
-  left: 215px;
-  top: 60px;
   width: 145px;
   height: 31px;
   font-weight: 700;
@@ -299,26 +300,26 @@ body {
   line-height: 1.19;
   color: var(--color-blue);
   text-decoration: none;
+  margin-top: 65px;
 }
 .studio {
   color: var(--color-background);
 }
 .address,
 .address:focus {
-  margin-top: 111px;
   width: 246px;
   height: 81px;
-  margin-left: 215px;
+  margin-bottom: 55px;
+  margin-top: 20px;
 }
 .address ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   font-size: 14px;
+  margin-top: 20px;
 }
 .address ul li:nth-child(2),
 .address ul li:nth-child(3) {
-  margin-top: 9px;
+  padding-top: 9px;
 }
 .address ul li a:focus,
 .address ul li a:hover,
