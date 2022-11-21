@@ -26,6 +26,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   border-bottom: 1px #ececec;
+  display: flex;
 }
 .container {
   max-width: 1200px;
@@ -159,6 +160,9 @@ body {
 }
 .attributes ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
   list-style: none;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -166,12 +170,6 @@ body {
 .attributes ul li {
   width: 270px;
   height: 101px;
-}
-.attributes ul li:nth-child(2),
-.attributes ul li:nth-child(3),
-.attributes ul li:nth-child(4)
- {
-  margin-left: 30px;
 }
 .attributes-text {
   text-transform: uppercase;
@@ -190,13 +188,17 @@ body {
 .work {
   width: 1170px;
   height: 386px;
-  margin-left: 215px;
-  margin-top: 94px;
+  box-sizing: content-box;
+}
+.container.middle
+{
+  display: flex;
+  flex-direction: column;
 }
 .work-title {
   width: 352px;
   height: 42px;
-  margin-left: 409px;
+  padding-left: 409px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -220,18 +222,21 @@ body {
   float: left;
   margin-left: 30px;
 }
-/*finish what we do*/
+/*finish work*/
 .our-team {
   height: 648px;
   width: 1600px;
   left: 0px;
   background: var(--color-third-header-button);
 }
+.container.bottom
+{
+  flex-direction: column;
+}
 .block-title {
   width: 210px;
   height: 42px;
-  margin: 94px 695px 50px 695px;
-  padding-top: 94px;
+  padding-left: 480px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -241,18 +246,14 @@ body {
   color: var(--color-almost-black);
 }
 .our-team ul {
-  position: absolute;
   width: 1170px;
   height: 368px;
-  margin: 0px 0px 0px 215px;
-  padding: 0;
   list-style: none;
+  margin-top: 50px;
 }
-
 .our-team ul li {
   width: 270px;
   height: 368px;
-  top: 1635px;
   float: left;
   text-align: center;
   letter-spacing: 0.03em;
