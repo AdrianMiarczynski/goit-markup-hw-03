@@ -399,6 +399,7 @@ body {
   padding-top: 34px;
   margin: 0;
   min-width: 1200px;
+  padding-left: 15px;
 }
 .main-box li {
   list-style: none;
@@ -406,7 +407,6 @@ body {
 .main-box li .box-img {
   margin: 0;
   height: 404px;
-  border-bottom: 1px solid var(--color-third-header-button);
 }
 .main-box li .box-img img {
   width: 370px;
@@ -416,7 +416,9 @@ body {
   width: 322px;
   height: 70px;
   letter-spacing: 0.06em;
-  margin: 20px 24px;
+  padding: 20px 24px;
+  box-sizing: content-box;
+  border: 1px solid var(--color-third-header-button);
 }
 .box-img-title h3 {
   width: 322px;
