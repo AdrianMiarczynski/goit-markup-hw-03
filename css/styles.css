@@ -398,6 +398,7 @@ body {
   gap: 30px;
   padding-top: 34px;
   margin: 0;
+  min-width: 1200px;
 }
 .main-box li {
   list-style: none;
@@ -425,7 +426,7 @@ body {
 }
 .box-img-title p {
   color: var(--color-grey);
-  margin-top: 4px;
+  padding-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   width: 322px;
