@@ -332,11 +332,12 @@ body {
 .portfolio-page {
   box-sizing: content-box;
   width: 1170px;
-  margin-left: 215px;
+  height: 1360px;
   background: var(--color-background);
   color: var(--color-almost-black);
 }
 .filters {
+  display: flex;
   margin-left: 295px;
   width: 572px;
   height: 54px;
