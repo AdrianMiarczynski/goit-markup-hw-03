@@ -33,9 +33,13 @@ body {
   max-width: 1200px;
   justify-content: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   margin-left: 200px;
+}
+.principal
+{
+  flex-direction: row;
 }
 .logo {
   width: 145px;
@@ -112,12 +116,14 @@ body {
   padding-bottom: 94px;
 }
 .header {
+  margin-left: -200px;
   width: 1600px;
   height: 600px;
   background: var(--color-header-footer);
   text-align: center;
 }
-.container.top {
+.top {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 106px;
@@ -131,6 +137,8 @@ body {
   text-transform: uppercase;
   color: var(--color-background);
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .header .button {
   width: 200px;
@@ -183,10 +191,6 @@ body {
   width: 1170px;
   box-sizing: content-box;
 }
-.container.middle {
-  display: flex;
-  flex-direction: column;
-}
 .work-title {
   width: 352px;
   padding-left: 409px;
@@ -216,11 +220,10 @@ body {
 /*finish work*/
 .our-team {
   width: 1600px;
-  left: 0px;
   background: var(--color-third-header-button);
-}
-.container.bottom {
-  flex-direction: column;
+  margin-left: -200px;
+  display: flex;
+  justify-content: center;
 }
 .block-title {
   width: 210px;
@@ -367,6 +370,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-weight: 500;
+  padding: 6px;
 }
 .filters li .all:active {
   background-color: var(--color-blue);
